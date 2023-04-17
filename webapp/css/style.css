@@ -1,0 +1,85 @@
+/* Titulos centrados */
+.sapMBarTitleAlignAuto .sapMBarPH{
+    justify-content: center;
+}
+
+/* Validacion inputs */
+.validacionRed .sapMInputBaseContentWrapper{
+    border: .0625rem solid red;
+}
+
+/* Tablero de juego */
+.celda{
+    height: 7.5em !important;
+}
+
+.celda .sapMBtnIcon{
+    font-size: 4rem;
+    line-height: 6.125rem;
+}
+
+.celda .sapMBtnInner {
+    height: 100px !important;
+}
+
+/* Turnos de los jugadores */
+.turnoActivo .sapMBtnInner{
+    border-radius: 5px;
+    border: 1px solid green;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: green !important;
+
+    /* Transicion */
+    transition: color 1s, border-radius 1s, background-color 1s, border 0.5s ;
+}
+
+.turnoActivo .sapMBtnIcon{
+    color: white !important;
+    font-weight: bold;
+    
+    /* Transicion */
+    transition: color 1s, font-weight 1s;
+}
+
+.turnoActivo .sapMBtnInner{
+    color: white !important;
+}
+
+.player .sapMBtnInner{
+    border: none;
+    color:black;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: transparent;
+}
+
+.player .sapMBtnInner:hover{
+    background: orange !important;
+    
+    /* Transicion */
+    transition: background 1s;
+}
+
+.colorParaLasX .sapMBtnIcon{
+    color: red !important;
+
+    transition: color 1.5s;
+}
+
+.colorParaLasO .sapMBtnIcon{
+    color: orange !important;
+
+    transition: color 1.5s;
+}
+
+/* Tabla */
+.color-verde{
+    color: green !important;
+}
+
+.color-rojo{
+    color: red !important;
+}
+
+

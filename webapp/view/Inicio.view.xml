@@ -1,0 +1,25 @@
+<mvc:View
+    controllerName="tresenraya.controller.Inicio"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page"  title="{i18n>title}">
+					<content>
+						<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+							<items>
+								<Label text="{i18n>inicio-tituloNombreJugadores}" />
+								<Input id="player1" placeholder="{i18n>inicio-nombreJugador1}" liveChange="comprobarCampo"/>
+								<Input id="player2" placeholder="{i18n>inicio-nombreJugador2}" tooltip="{i18n>informacionPlayer2}" liveChange="comprobarCampo"/>
+								<Button width="12rem" text="{i18n>incio-btn-IniciarPartida}" type="Emphasized" press=".iniciarPartida"/>
+							</items>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
